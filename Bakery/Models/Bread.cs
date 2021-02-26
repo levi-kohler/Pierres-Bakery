@@ -14,16 +14,16 @@ namespace Bakery.Models
 
     public int BreadCost()
     {
-      int singleLoaf = 5;
+      int breadPrice = 5;
 
       if (BreadAmount % 3 == 0)
       {
-        return (singleLoaf * BreadAmount) - ((BreadAmount/3) * singleLoaf);
+        return (breadPrice * BreadAmount) - ((BreadAmount/3) * breadPrice);
       }
 
       else 
       {
-        return (singleLoaf * BreadAmount);
+        return (breadPrice * BreadAmount);
       }  
     }
 

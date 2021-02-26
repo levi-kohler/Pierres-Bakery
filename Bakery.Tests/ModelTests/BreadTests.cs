@@ -46,7 +46,7 @@ namespace Bakery.Tests
 
       Bread newBread = new Bread(breadPrice, breadAmount);
 
-      int totalPrice = newBread.GetBreadCost();
+      int totalPrice = newBread.BreadCost();
 
       Assert.AreEqual(10, totalPrice);
     }
