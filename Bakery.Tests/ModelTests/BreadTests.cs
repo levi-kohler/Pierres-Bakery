@@ -38,5 +38,19 @@ namespace Bakery.Tests
       Assert.AreEqual(breadAmount, amount);
     }
 
+        [TestMethod]
+    public void BreadPriuce_ReturnPriceOfThreeLoaves_Int()
+    {
+      int breadPrice = 5;
+      int breadAmount = 3;
+      Bread newBread = new Bread(breadPrice, breadAmount);
+
+      int totalPrice = newBread.TotalBreadPrice;
+
+      Assert.AreEqual(10, totalPrice);
+    }
+
+
+
   }
 }
