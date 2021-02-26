@@ -8,9 +8,24 @@ namespace Program
     public static void Main()
     {
       Console.WriteLine("Welcome to Pierre's Bakery!");
+      Console.WriteLine("Single loaves of bread are $5 and single pastries are $2");
+      Console.ForegroundColor = ConsoleColor.Green;
+      Console.WriteLine("********************");
+      Console.ForegroundColor = ConsoleColor.White;
       Console.WriteLine("Today's deals are:");
       Console.WriteLine("- Buy 2 loaves of bread and get the third free!");
-      Console.WriteLine ("- Buy 1 pastry for $2 or 3 pastries for $5!");
+      Console.WriteLine("- Buy 3 pastries for $5!");
+      Console.ForegroundColor = ConsoleColor.Green;
+      Console.WriteLine("********************");
+      Console.ForegroundColor = ConsoleColor.White;
+
+      Console.WriteLine("How many loaves of bread would you like to purchase?");
+      string userBread = Console.ReadLine();
+      int intUserBread = int.Parse(userBread);
+
+      Console.WriteLine("How many pastries would you like to purchase?");
+      string userPastry = Console.ReadLine();
+      int intUserPastry = int.Parse(userPastry);
 
     }
   }
