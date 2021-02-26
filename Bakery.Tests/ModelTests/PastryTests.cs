@@ -24,5 +24,17 @@ namespace Bakery.Tests
 
       Assert.AreEqual(pastryPrice, result);
     }
+
+        [TestMethod]
+    public void PastryAmount_ReturnAmountOfPastries_Int()
+    {
+      int pastryPrice = 5;
+      int pastryAmount = 3;
+      Pastry newPastry = new Pastry(pastryPrice, pastryAmount);
+
+      int amount = newPastry.PastryAmount;
+
+      Assert.AreEqual(pastryAmount, amount);
+    }
   }
 }
