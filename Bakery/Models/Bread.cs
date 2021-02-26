@@ -1,7 +1,12 @@
-namespace Bakery
+namespace Bakery.Models
 {
   public class Bread
   {
-    // properties, constructors, methods, etc. go here
+    public int BreadPrice { get; }
+
+    public Bread(int breadPrice)
+    {
+      BreadPrice = breadPrice;
+    }
   }
 }
