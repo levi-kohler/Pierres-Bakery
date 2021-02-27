@@ -27,6 +27,11 @@ namespace Program
       string userPastry = Console.ReadLine();
       int intUserPastry = int.Parse(userPastry);
 
+      if (intUserBread >= 0 && intUserPastry >= 0)
+      {
+        
+      }
+
     }
   }
 }
