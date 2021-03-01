@@ -42,13 +42,13 @@ namespace Bakery.Tests
     public void PastryPrice_ReturnPriceOfThreePastries_Int()
     {
       int pastryPrice = 2;
-      int pastryAmount = 3;
+      int pastryAmount = 4;
 
       Pastry newPastry = new Pastry(pastryPrice, pastryAmount);
 
       int totalPrice = newPastry.PastryCost();
 
-      Assert.AreEqual(5, totalPrice);
+      Assert.AreEqual(7, totalPrice);
     }
   }
 }
