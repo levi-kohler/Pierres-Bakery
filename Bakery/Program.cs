@@ -29,8 +29,14 @@ namespace Program
 
       if (intUserBread >= 0 && intUserPastry >= 0)
       {
-        
+        Bread userBreadCart = new Bread(5, intUserBread);
+        Pastry userPastryCart = new Pastry(2, intUserPastry);
+        Console.WriteLine("Your total price for bread is: $"+userBreadCart.BreadCost()+".");
+        Console.WriteLine("Your total price for pastries is: $"+userPastryCart.PastryCost()+".");
+        Console.WriteLine("Your final total today comes out to: $"+(userBreadCart.BreadCost()+(userPastryCart.PastryCost())));
       }
+      else
+      Console.Write("Please insert a valid number for bread and/or pastries");
 
     }
   }
