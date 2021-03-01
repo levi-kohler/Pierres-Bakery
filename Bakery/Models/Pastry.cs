@@ -20,11 +20,18 @@ namespace Bakery.Models
       {
         return ((PastryAmount/3) * 5);
       }
-
-      else 
+      else if (PastryAmount < 3)
       {
         return (pastryPrice * PastryAmount);
       }  
+      else if ((PastryAmount - 1) % 3 == 0)
+      {
+        return ((PastryAmount - 1) / 3) * 5 + pastryPrice;
+      }
+      else
+      {
+        return ((PastryAmount - 2) / 3)* 5 + (PastryPrice + 2);
+      }
     }
 
     public int GetPastryCost()
