@@ -20,11 +20,18 @@ namespace Bakery.Models
       {
         return (breadPrice * BreadAmount) - ((BreadAmount/3) * breadPrice);
       }
-
-      else 
+      else if (BreadAmount < 3)
       {
         return (breadPrice * BreadAmount);
       }  
+      else if ((BreadAmount - 1) % 3 == 0)
+      {
+        return (breadPrice * (BreadAmount - 1))-((BreadAmount/3) * breadPrice) + breadPrice;
+      }
+      else
+      {
+        return (breadPrice * (BreadAmount - 2))-((BreadAmount/3) * breadPrice) + (breadPrice * 2);
+      }
     }
 
     public int GetBreadCost()
