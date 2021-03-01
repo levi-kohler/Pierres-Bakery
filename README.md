@@ -24,7 +24,7 @@ _This console application will welcome the user to the Bakery, informing them of
 
 ## Known Bugs
 
-* _UI is not build out yet_
+* _None that I know of_
 
 ## License
 
