@@ -19,6 +19,9 @@ _This console application will welcome the user to the Bakery, informing them of
 * _Clone this repository to your Desktop_
 * _Navigate to the directory named 'Bakery' in your terminal (or terminal equivalent)_
 * _Type 'dotnet restore' into the terminal to download all dependencies_
+* _Navigate to the Directory named 'ModelTests'_
+* _Type 'dotnet test' into the terminal to ensure all tests pass and business logic is functioning as intended_
+* _Navigate back the the directory named 'Bakery'_
 * _Type 'dotnet run' into the terminal_
 * _The program should now run in the terminal_
 
